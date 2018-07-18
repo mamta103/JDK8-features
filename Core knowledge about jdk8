@@ -121,4 +121,8 @@ doubleNumberFunction = public int double( int a ){
 :::::::::::::::::::Lambdas Expression:::::::::::::::::::
 doubleNumberFunction = ( int a ) -> a*2;
 addFunction = (int a ,int b) -> a+b
+safeDivisionFunction = (int a,int b) -> {
+                                        if( b== 0) return 0;
+					return a/b;
+					};
 
