@@ -26,4 +26,23 @@ Java 8 Lambda Basics 2 - Why Lambdas
 --------------------------------------------------------
 Java 8 Lambda Basics 4 - Functional vs Object Oriented Programming
 functionals programming makes code easy to understand and easy to write.
+--------------------------------------------------------
+--------------------------------------------------------
+Java 8 Lambda Basics 5 - Passing Behavior in OOP
+1.Everything is an Object.
+2.all codes blocks are "associated" with classes and Object.
 
+One way:
+package io.javabrains;
+
+public class Greeter {
+	public void greet() {
+		System.out.println("Hello World!");
+	}
+
+	public static void main(String[] args) {
+		Greeter greeRef = new Greeter();
+		greeRef.greet();
+	}
+}--------------------------------------------------------
+--------------------------------------------------------
