@@ -46,3 +46,40 @@ public class Greeter {
 	}
 }--------------------------------------------------------
 --------------------------------------------------------
+Second way:
+package io.javabrains;
+
+::::::::::::::::::::::::::::::::::Interface Greeting:-::::::::::::::::::::::::::::::::::
+public interface Greeting {
+
+	public void perform();
+}
+
+::::::::::::::::::::::::::::::::::Class Helloworld which take care of interface implement::::::::::::::::::::::::::::::::::
+package io.javabrains;
+
+public class HelloWorldGreeting implements Greeting {
+
+	@Override
+	public void perform() {
+		
+	}
+
+}
+::::::::::::::::::::::::::::::::::Finally calling functional programming by jdk7.:::::::::::::::::::
+package io.javabrains;
+
+public class Greeter {
+	public void greet(Greeting greeting) {
+		greeting.perform();
+		System.out.println("Hello World!");
+	}
+
+	public static void main(String[] args) {
+		Greeter greeRef = new Greeter();
+		HelloWorldGreeting helloWorldGreeting = new HelloWorldGreeting();
+		greeRef.greet(helloWorldGreeting);
+	}
+}
+
+
