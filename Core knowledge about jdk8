@@ -102,4 +102,15 @@ aBlockOfCode = () -> System.out.println("Hello World!");
    void.
 4.one extra addition in lambdas -> between parenthisis and function body( {} ).
 5.If having only one line of code then no need to curly bracket,just get rid of this {   }.
+--------------------------------------------------------
+--------------------------------------------------------
+Java 8 Lambda Basics 7 - Lambda Expression Examples
+
+greetingFunction = () ->System.out.println("Hello World!");
+greet(greetingFunction);	
+also can write in other ways:
+greet( () ->System.out.println("Hello World!"));
+note:Think back as like we passing inline values String and numbers just like passing an inline String value to a method you can pass
+"inline" lamdas expression too!
+
 
