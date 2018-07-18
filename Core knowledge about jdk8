@@ -15,4 +15,14 @@ Java 8 Lambda Basics 1 - Introduction
 3.Function interfaces
 4.Method references
 5.Collection Improvements
+--------------------------------------------------------
+--------------------------------------------------------
+Java 8 Lambda Basics 2 - Why Lambdas
+1.Lambdas enable functional programming
+2.Readable and consice codes
+3.Eaiser-to-use API and libraies.
+4.Enables to use parallel processing.
+--------------------------------------------------------
+--------------------------------------------------------
+Java 8 Lambda Basics 4 - Functional vs Object Oriented Programming
 
