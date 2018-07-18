@@ -94,10 +94,12 @@ aBlockOfCode={
 .....
 .....
 }
-aBlockOfCode =  void (){
-              System.out.println("Hello World!");
-              }
+aBlockOfCode = () -> System.out.println("Hello World!");
+              
 1.Public noo need now because its not isolated so get read of it :-public
 2.alys use by aBlockOfCode then ,so there is noo need to use function name so get rid of it :-perform
-
+3. In lambdas expression no need to write return type because they already knows wht going to return so just get rid of by return types->
+   void.
+4.one extra addition in lambdas -> between parenthisis and function body( {} ).
+5.If having only one line of code then no need to curly bracket,just get rid of this {   }.
 
