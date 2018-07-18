@@ -81,5 +81,17 @@ public class Greeter {
 		greeRef.greet(helloWorldGreeting);
 	}
 }
-
+Above we are passing behaviors by things.
+--------------------------------------------------------
+--------------------------------------------------------
+Java 8 Lambda Basics 6 - Introducing Lambda Expressions
+Functions as Values:-
+Inline values:-
+String name = foo;
+double pi = 3.14;
+can we do in jdk 8 like:-
+aBlockOfCode={
+.....
+.....
+}
 
