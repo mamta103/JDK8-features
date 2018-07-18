@@ -94,4 +94,10 @@ aBlockOfCode={
 .....
 .....
 }
+aBlockOfCode =  void (){
+              System.out.println("Hello World!");
+              }
+1.Public noo need now because its not isolated so get read of it :-public
+2.alys use by aBlockOfCode then ,so there is noo need to use function name so get rid of it :-perform
+
 
