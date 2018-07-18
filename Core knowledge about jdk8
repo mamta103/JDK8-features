@@ -113,4 +113,12 @@ greet( () ->System.out.println("Hello World!"));
 note:Think back as like we passing inline values String and numbers just like passing an inline String value to a method you can pass
 "inline" lamdas expression too!
 
+:::::::::::::::::::its not lambdas expression:::::::::::::::::::
+doubleNumberFunction = public int double( int a ){
+                       return a*2;
+		       }
+		 
+:::::::::::::::::::Lambdas Expression:::::::::::::::::::
+doubleNumberFunction = ( int a ) -> a*2;
+addFunction = (int a ,int b) -> a+b
 
