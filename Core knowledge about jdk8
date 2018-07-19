@@ -1,5 +1,4 @@
---------------------------------------------------------
---------------------------------------------------------
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Java 8 Features
 Important 
 1.Functional Programming
@@ -7,27 +6,23 @@ Important
 3.Stream API
 4.Method Interface
 8.22 Interface in Java 8 Default , Static Methods | New features
---------------------------------------------------------
---------------------------------------------------------
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Java 8 Lambda Basics 1 - Introduction
 1.Understanding lambdas
 2.Using lambdas
 3.Function interfaces
 4.Method references
 5.Collection Improvements
---------------------------------------------------------
---------------------------------------------------------
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Java 8 Lambda Basics 2 - Why Lambdas
 1.Lambdas enable functional programming
 2.Readable and consice codes
 3.Eaiser-to-use API and libraies.
 4.Enables to use parallel processing.
---------------------------------------------------------
---------------------------------------------------------
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Java 8 Lambda Basics 4 - Functional vs Object Oriented Programming
 functionals programming makes code easy to understand and easy to write.
---------------------------------------------------------
---------------------------------------------------------
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Java 8 Lambda Basics 5 - Passing Behavior in OOP
 1.Everything is an Object.
 2.all codes blocks are "associated" with classes and Object.
@@ -44,18 +39,19 @@ public class Greeter {
 		Greeter greeRef = new Greeter();
 		greeRef.greet();
 	}
-}--------------------------------------------------------
---------------------------------------------------------
+}
+Output:Hello World!
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Second way:
 package io.javabrains;
 
-::::::::::::::::::::::::::::::::::Interface Greeting:-::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::Interface Greeting:-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 public interface Greeting {
 
 	public void perform();
 }
 
-::::::::::::::::::::::::::::::::::Class Helloworld which take care of interface implement::::::::::::::::::::::::::::::::::
+:::::::::::::::::Class Helloworld which take care of interface implement:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 package io.javabrains;
 
 public class HelloWorldGreeting implements Greeting {
@@ -66,7 +62,7 @@ public class HelloWorldGreeting implements Greeting {
 	}
 
 }
-::::::::::::::::::::::::::::::::::Finally calling functional programming by jdk7.:::::::::::::::::::
+::::::::::::::::::::::::::::::::::Finally calling functional programming by jdk7.:::::::::::::::::::::::::::::::::::::::::::::::::::::::
 package io.javabrains;
 
 public class Greeter {
@@ -82,8 +78,7 @@ public class Greeter {
 	}
 }
 Above we are passing behaviors by things.
---------------------------------------------------------
---------------------------------------------------------
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Java 8 Lambda Basics 6 - Introducing Lambda Expressions
 Functions as Values:-
 Inline values:-
@@ -96,14 +91,13 @@ aBlockOfCode={
 }
 aBlockOfCode = () -> System.out.println("Hello World!");
               
-1.Public noo need now because its not isolated so get read of it :-public
-2.alys use by aBlockOfCode then ,so there is noo need to use function name so get rid of it :-perform
+1.Public no need now because its not isolated so get read of it :- public
+2.alys use by aBlockOfCode then ,so there is noo need to use function name so get rid of it :- perform
 3. In lambdas expression no need to write return type because they already knows wht going to return so just get rid of by return types->
    void.
 4.one extra addition in lambdas -> between parenthisis and function body( {} ).
 5.If having only one line of code then no need to curly bracket,just get rid of this {   }.
---------------------------------------------------------
---------------------------------------------------------
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Java 8 Lambda Basics 7 - Lambda Expression Examples
 
 greetingFunction = () ->System.out.println("Hello World!");
@@ -113,12 +107,12 @@ greet( () ->System.out.println("Hello World!"));
 note:Think back as like we passing inline values String and numbers just like passing an inline String value to a method you can pass
 "inline" lamdas expression too!
 
-:::::::::::::::::::its not lambdas expression:::::::::::::::::::
+:::::::::::::::::::its not lambdas expression:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 doubleNumberFunction = public int double( int a ){
                        return a*2;
 		       }
 		 
-:::::::::::::::::::Lambdas Expression:::::::::::::::::::
+:::::::::::::::::::Lambdas Expression:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 doubleNumberFunction = ( int a ) -> a*2;
 addFunction = (int a ,int b) -> a+b
 safeDivisionFunction = (int a,int b) -> {
