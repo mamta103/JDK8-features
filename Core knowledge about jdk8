@@ -120,3 +120,24 @@ safeDivisionFunction = (int a,int b) -> {
 					return a/b;
 					};
 stringlengthCountFunction = (String s) -> s.length();
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Java 8 Lambda Basics 9 - Lambdas vs Interface Implementations
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+package io.javabrains;
+
+public class Greeter {
+	public void greet(Greeting greeting) {
+		greeting.perform();
+		System.out.println("Hello World!");
+	}
+
+	public static void main(String[] args) {
+		Greeter greeRef = new Greeter();
+			Greeting helloWorldGreeting = new HelloWorldGreeting();
+			Greeting lambdasGreeting = () -> System.out.println("Hello World!");
+			lambdasGreeting.perform();
+	}
+}
+
+
+
