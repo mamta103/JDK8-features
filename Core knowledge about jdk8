@@ -139,7 +139,7 @@ public class Greeter {
 	}
 }
 
-this is how you execute lamds expressions. by calling the interface method ob it ,just as if it were in instance of class.
+note:this is how you execute lamds expressions. by calling the interface method ob it ,just as if it were in instance of class.
 package io.javabrains;
 
 public class Greeter {
@@ -196,6 +196,19 @@ public class Greeter {
 }
 
 its output same but trust there is not equal function innercalss , and lambdas expression is different.
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Java 8 Lambda Basics 10 - Type Inference
+package io.javabrains;
 
+public class TypeInterfenceExample {
+	public static void main(String[] args) {
+		StringLengthLambdas lambdas = s -> s.length();
+		System.out.println(lambdas.stringLength("MAMTA YADAV"));
+	}
+}
+
+interface StringLengthLambdas {
+	int stringLength(String str);
+}
 
 
