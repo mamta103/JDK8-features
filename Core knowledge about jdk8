@@ -265,3 +265,12 @@ public class RunnableExample {
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Java 8 Lambda Basics 12 - Functional Interface
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+1.Functional Interface : called Functional Interface while  one abstract methods contains.
+2.@FunctionalInterface annotation is completly optional . The java does not require it for  lamda types.But it is good practice to add
+it.
+package io.javabrains;
+@FunctionalInterface
+public interface Greeting {
+
+	public void perform();
+}
