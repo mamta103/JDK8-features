@@ -166,5 +166,36 @@ public class Greeter {
 }
 
 
+package io.javabrains;
+
+public class Greeter {
+	public void greet(Greeting greeting) {
+		greeting.perform();
+	}
+
+	public static void main(String[] args) {
+		Greeter greeRef = new Greeter();
+			Greeting helloWorldGreeting = new HelloWorldGreeting();
+			Greeting lambdasGreeting = () -> System.out.println("Hello World!");
+			
+			Greeting innerGreeting = new Greeting(){
+
+				@Override
+				public void perform() {
+					 System.out.println("Hello World!");					
+				}
+				
+			};
+	
+			//innerGreeting.perform();
+			greeRef.greet(innerGreeting);
+			System.out.println();
+			greeRef.greet(lambdasGreeting);
+
+	}
+}
+
+its output same but trust there is not equal function innercalss , and lambdas expression is different.
+
 
 
