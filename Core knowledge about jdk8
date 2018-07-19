@@ -210,5 +210,43 @@ public class TypeInterfenceExample {
 interface StringLengthLambdas {
 	int stringLength(String str);
 }
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+package io.javabrains;
 
+public class TypeInterfenceExample {
+	public static void main(String[] args) {
+		printLambdas(s -> s.length());
+
+	}
+
+	public static void printLambdas(StringLengthLambdas l) {
+		System.out.println(l.stringLength("Mamta"));
+	}
+
+	interface StringLengthLambdas {
+		int stringLength(String str);
+	}
+
+}
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Java 8 Lambda Basics 11 - Runnable Using Lambdas
+
+1st way:
+package io.javabrains;
+
+public class RunnableExample {
+	public static void main(String[] args) {
+		Thread thread = new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("printed inside runnable.");
+			}
+		});
+		thread.run();
+	}
+}
+note:- Thos doesn't start a new thread. for that, i should actually used Thread.start().
+Note:- thos works because Runnable has  a single method run().if it had more than one method, you could not  have written a lambda function
+of that type.
