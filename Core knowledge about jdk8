@@ -198,6 +198,7 @@ public class Greeter {
 its output same but trust there is not equal function innercalss , and lambdas expression is different.
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Java 8 Lambda Basics 10 - Type Inference
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 package io.javabrains;
 
 public class TypeInterfenceExample {
@@ -211,7 +212,6 @@ interface StringLengthLambdas {
 	int stringLength(String str);
 }
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 package io.javabrains;
 
 public class TypeInterfenceExample {
@@ -231,6 +231,7 @@ public class TypeInterfenceExample {
 }
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Java 8 Lambda Basics 11 - Runnable Using Lambdas
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 1st way:
 package io.javabrains;
@@ -250,3 +251,17 @@ public class RunnableExample {
 note:- Thos doesn't start a new thread. for that, i should actually used Thread.start().
 Note:- thos works because Runnable has  a single method run().if it had more than one method, you could not  have written a lambda function
 of that type.
+
+Runnable Lamda Expression 
+package io.javabrains;
+
+public class RunnableExample {
+	public static void main(String[] args) {
+
+		Thread threadLamda = new Thread(() -> System.out.println("Printing Lamda Runnable."));
+		threadLamda.run();
+	}
+}
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Java 8 Lambda Basics 12 - Functional Interface
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
