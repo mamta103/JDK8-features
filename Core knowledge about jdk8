@@ -139,5 +139,32 @@ public class Greeter {
 	}
 }
 
+this is how you execute lamds expressions. by calling the interface method ob it ,just as if it were in instance of class.
+package io.javabrains;
+
+public class Greeter {
+	public void greet(Greeting greeting) {
+		greeting.perform();
+		System.out.println("Hello World!");
+	}
+
+	public static void main(String[] args) {
+		Greeter greeRef = new Greeter();
+			Greeting helloWorldGreeting = new HelloWorldGreeting();
+			Greeting lambdasGreeting = () -> System.out.println("Hello World!");
+			
+			Greeting innerGreeting = new Greeting(){
+
+				@Override
+				public void perform() {
+					 System.out.println("Hello World!");					
+				}
+				
+			};
+	
+			innerGreeting.perform();}
+}
+
+
 
 
