@@ -14,7 +14,7 @@ Supiler Consumer
 8. Supplier
 9. Method refernce & constructor reference by Double colon(::) operator.
 10 Stream API
-11. Date & Time API ( Joda API)
+11. Date & Time API ( Joda time API)
 ==================================
 Java 8 features
 Features of java 8
